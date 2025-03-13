@@ -7,3 +7,11 @@ const students = [
 ];
 
 // เริ่มเขียนโค้ดตรงนี้
+function scoreeee(students){
+  let result = students.filter((student)=>student.score>50).map((student)=>student.score*1.10).
+  reduce((acc,score)=>acc+score,0);
+  // console.log(result)
+  return `Total score is ${result}`
+}
+
+console.log(scoreeee(students))
